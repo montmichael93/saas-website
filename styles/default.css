@@ -1,0 +1,75 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --font-color-base: #666;
+    --font-color-dark: #212529;
+    --font-color-light: #b0aebe;
+    --font-color-link: #57a6ff;
+    --footer: #34314b;
+    --footer-base: #2e2b45;
+    --contrast: rgba(246, 248, 249, 0.8);
+    --success: #64ecf5;
+    --danger: #ff8b8d;
+    --grad-1: #a1ecff;
+    --grad-2: #7dbcff;
+    --size-10: 0.625rem;
+    --size-14: 0.875rem;
+    --size-16: 1rem;
+    --size-18: 1.125rem;
+    --size-20: 1.25rem;
+    --size-30: 1.875rem;
+    --size-40: 2.5rem;
+    --size-50: 3.125rem;
+    --size-100: 6.25rem;
+    --size-150: 9.375rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+::after ::before {
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+/*
+body {
+    background-color: gray;
+}
+    */
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.button-play {
+    padding: 0.4375rem 1.5625rem;
+    border-radius: 1.25rem;
+    background-color: #1633d5;
+
+}
+
+.button-play a {
+    color: #fff8f8
+}
