@@ -1,16 +1,15 @@
 .nav-container {
     display: flex;
-    gap: var(--size-150);
-    margin-bottom: var(--size-50);
+    justify-content: space-between;
+    margin: var(--size-20);
 }
 
 .nav-logo {
-margin: auto;
+
 }
 
 .nav-links {
-    margin-left: auto;
-    margin-right: var(--size-30);
+
 }
 
 .nav-links a {
@@ -125,7 +124,7 @@ margin: auto;
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: var(--size-100);
     grid-row-gap: 0px;
-    margin-top: var(--size-100);
+    margin: var(--size-50);
 }
 
 
@@ -177,10 +176,15 @@ margin: auto;
 
 
 .hire-us {
-    background-color: navy;
+    background-color: #1d0d82;
     display: flex;
-    justify-content: space-evenly;
-    margin-top: var(--size-100);
+    justify-content: space-between;
+    padding: var(--size-50);
+    margin-top: var(--size-150);
+}
+
+.hire-header {
+    margin-top: inherit;
 }
 
 .hire-header h2 {
@@ -200,11 +204,13 @@ margin: auto;
 .executive h4 {
     color: #ffff;
     font-size: var(--size-20);
+    margin: 0;
 }
 
-.executive h6 {
+.executive h5 {
     color: var(--font-color-light);
-    font-size: var(--size-10);
+    font-size: var(--size-20);
+    margin: auto;
 }
 
 .hire-us .form {
@@ -213,24 +219,45 @@ margin: auto;
     margin-top: var(--size-20);
     margin-bottom: var(--size-20);
     padding: 0 var(--size-20);
+    border-radius: var(--size-10);
 }
 
 .input-group {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     height: var(--size-50);
-
+    gap: var(--size-20);
+    
 }
 
+    .input-group input {
+        width: -webkit-fill-available;
+    }
+
+    .input-group select {
+        width: -webkit-fill-available;
+    }
+
 .form-text-area {
-    margin-left: var(--size-20);
+    width: -webkit-fill-available;
     margin-top: inherit;
+    height: var(--size-150);
 }
 
 .bottom-form-text {
     text-align: center;
     margin-bottom: inherit;
+    margin-top: var(--size-50);
 }
+
+.bottom-form-text p {
+    margin-bottom: auto;
+}
+
+.form-button {
+    margin: var(--size-50);
+}
+
 
 .footer-container {
     display: flex;
@@ -242,12 +269,40 @@ margin: auto;
     margin: var(--size-10);
 }
 
+.phone-number {
+    color: #0f55d6;
+}
+
+.fa-phone {
+    color: #000000;
+}
+
 .bottom-footer {
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    margin: var(--size-18);
+}
+}
+
+    .bottom-footer p {
+        display: contents;
+    }
+
+.social-buttons button {
+    margin: var(--size-10);
+    padding: var(--size-10);
+}
+
+.last-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+
+
 .last-text {
     text-align: center;
 }
+
