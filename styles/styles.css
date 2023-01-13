@@ -192,7 +192,7 @@
         margin-bottom: var(--size-50);
     }
 
-
+     
 
 
 .dot-offers {
@@ -211,19 +211,20 @@
 }
 
 
+
 .executive-container {
-    display: grid;
+     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    margin-left: var(--size-100);
-    background-image: url("/assets/abstract/dots.svg");
+    margin-left: var(--size-150);
+   
 }
+
 
 .executive-director {
     grid-area: 1 / 1 / 2 / 2;
-    
 }
 
 .testimonial {
@@ -232,11 +233,53 @@
 
 
 
+.executive-dots {
+    width: 27%;
+    position: absolute;
+    right: 85%;
+    z-index: -1;
+}
+    
+
+/*
+
+
+
+.executive-container {
+    display: grid;
+    grid-template-columns: .5fr repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+
+
+.executive-dots {
+    
+    grid-area: 1 / 1 / 2 / 2;
+    position: relative;
+    left: 80%;
+    top: 15%;
+    z-index: -1;
+}
+
+
+.executive-director {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.testimonial {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+    */
 
     .executive-director img {
         width: 85%;
         
     }
+
+    
+
 
 .hubspot-logo {
     width: var(--size-150);
@@ -356,14 +399,22 @@
 
 .hire-us {
     background-color: #1d0d82;
-    display: flex;
-    justify-content: space-around;
-    margin-top: var(--size-150);
-   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-column-gap: var(--size-100);
+    padding: var(--size-20) var(--size-50);
+
 }
 
+
+
+
 .hire-header {
-    margin-top: inherit;
+    
+    grid-area: 1 / 1 / 2 / 2;
+    margin-top: var(--size-150);
 }
 
 .hire-header h2 {
@@ -377,6 +428,7 @@
         color: var(--font-color-light);
         margin-top: auto;
         margin-bottom: var(--size-30);
+
     }
 
 .hire-subheader p {
@@ -411,7 +463,7 @@
     margin-bottom: var(--size-20);
     padding: 0 var(--size-20);
     border-radius: var(--size-10);
-    width: 40%;
+    grid-area: 1 / 2 / 2 / 3;;
 }
 
 .input-group {
@@ -426,11 +478,15 @@
         width: -webkit-fill-available;
         color: var(--font-color-base);
         font-size: var(--size-18);
+        border-radius: var(--size-10);
+        border-style: solid;
     }
 
     .input-group select {
         width: -webkit-fill-available;
         font-size: var(--size-18);
+        border-radius: var(--size-10);
+        border-style: solid;
     }
 
 .form-text-area {
@@ -439,6 +495,8 @@
     height: var(--size-150);
     color: var(--font-color-base);
     font-size: var(--size-18);
+    border-radius: var(--size-10);
+    
 }
 
 .bottom-form-text {
