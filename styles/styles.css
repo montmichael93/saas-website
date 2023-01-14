@@ -18,6 +18,20 @@
        font-size: var(--size-20);
     }
 
+.buy-now-button {
+    border-radius: var(--size-50);
+    background-color: #1633d5;
+    padding: var(--size-10);
+}
+
+    .buy-now-button a {
+        color: #ffffff
+    }
+
+    .trigram-container {
+        display: none;
+    }
+
 .empowerment-container {
     display: inline-flex;
     margin-left: var(--size-100);
@@ -114,12 +128,39 @@
         margin-top: 0;
         font-size: var(--size-20);
     }
-
+/*
 .card-container {
     display: flex;
     justify-content: space-evenly;
     margin-top: var(--size-100);
     margin-bottom: var(--size-100);
+}
+
+    */
+
+.card-container {
+    display: grid;
+    grid-template-areas:
+        "respond custom prem docu";
+        margin-top: var(--size-100);
+    margin-bottom: var(--size-100);
+}
+
+
+#responsive {
+    grid-area: respond;
+}
+
+#customize {
+    grid-area: custom;
+}
+
+#premium {
+    grid-area: prem;
+}
+
+#document {
+    grid-area: docu;
 }
 
 
@@ -184,13 +225,17 @@
     font-size: var(--size-30);
 }
 
-    .four-dots li {
-        background-color: cornflowerblue;
-        border-radius: 100%;
-        width: var(--size-50);
-        text-align: center;
-        margin-bottom: var(--size-50);
-    }
+#line-dot {
+
+}
+
+#dot {
+    background-color: cornflowerblue;
+    border-radius: 100%;
+    width: var(--size-50);
+    text-align: center;
+    margin-bottom: var(--size-50)
+}
 
 
 
@@ -210,39 +255,50 @@
     margin: var(--size-30);
 }
 
+
+
 .executive-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: .4fr repeat(2, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    margin-left: var(--size-150);
-}
-
-
-.executive-director {
-    grid-area: 1 / 1 / 2 / 2;
-}
-
-.testimonial {
-    grid-area: 1 / 2 / 2 / 3;
+    margin-right: var(--size-50);
+    margin-top: var(--size-100);
 }
 
 
 
 .executive-dots {
-    width: 27%;
-    position: absolute;
-    right: 85%;
-    z-index: -1;
+    grid-area: 1 / 1 / 2 / 2;
+
 }
 
 
+.executive-dots {
+    left: 75%;
+    position: relative;
+    top: 30%;
+    z-index: -1;
+}
+
+.executive-director {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.testimonial {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+
+
+
+    
 
     .executive-director img {
         width: 85%;
         
     }
+
+    
 
 .hubspot-logo {
     width: var(--size-150);
@@ -262,7 +318,7 @@
 .trusted h4 {
     text-align: center;
     font-size: var(--size-20);
-    margin-top: var(--size-100);
+    margin-top: var(--size-150);
 }
 
 
@@ -404,11 +460,14 @@
 
 .hire-human {
     margin-top: var(--size-50);
+    display: flex;
+    justify-content: space-between;
 }
 
-.hire-human img {
-    border-radius: 100%;
-}
+    .hire-human img {
+        border-radius: 100%;
+        width: var(--size-50);
+    }
 
 .hire-us .form {
     font-size: var(--size-20);
