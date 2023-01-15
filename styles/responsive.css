@@ -1,6 +1,8 @@
 @media (min-width: 768px) and (max-width: 1023px) {
 
-
+    .nav-links {
+        display: none;
+    }
 
 
     .empowerment-container {
@@ -189,6 +191,113 @@
 
     @media (min-width: 360px) and (max-width: 767px) {
         body {
-        background-color: #aa27bd;
-    }
-}
+            background-color: #aa27bd;
+            
+        }
+
+
+        .nav-links {
+            display: none;
+        }
+
+        .empowerment-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            gap: var(--size-50);
+        }
+
+
+         .card-container {
+             display: flex;
+             flex-direction: column;
+        }
+
+        .service-card {
+            border-style: hidden;
+            font-size: var(--size-20);
+            padding: var(--size-20) var(--size-50);
+            box-shadow: 0 5px 5px #a09f9f;
+            width: -webkit-fill-available;
+            max-width: -webkit-fill-available;
+        }
+
+
+        .perspective-container {
+            display: flex;
+            /* justify-content: space-evenly; */
+            flex-direction: column;
+        }
+
+        .perspective-text {
+            text-align: center;
+        }
+
+
+        .full-image img {
+            margin: 0;
+            width: -webkit-fill-available;
+        }
+
+
+
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--size-50);
+        }
+
+
+        .pricing-container {
+            display: flex;
+            flex-direction: column;
+            gap: var(--size-30);
+        }
+
+
+
+        .hire-us {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .hire-header {
+            margin-left: 0;
+            text-align: center;
+        }
+
+
+        .hire-human {
+            position: initial;
+            left: 115%;
+            bottom: 40%;
+            /* justify-content: space-evenly; */
+        }
+
+        .head-of-comm {
+            position: initial;
+            left: 130%;
+            bottom: 35%;
+        }
+
+
+
+        .footer-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        .bottom-footer {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        }
+
+
+        
