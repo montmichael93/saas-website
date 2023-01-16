@@ -28,9 +28,16 @@
         color: #ffffff
     }
 
-    .trigram-container {
-        display: none;
-    }
+.navbar-toggler {
+    display: none;
+}
+
+
+
+.navbarDropdown {
+      display: none;
+  position: absolute;
+}
 
 .empowerment-container {
     display: inline-flex;
@@ -391,9 +398,18 @@
 
 
 
-    .price-card h4 {
-        font-size: var(--size-50);
+    .pricing-subcard span {
+        font-size: var(--size-16);
+        background-color: #1ac731;
+        padding: var(--size-10);
+        border-radius: var(--size-20);
+        color: var(--white);
     }
+
+
+.price-card h4 {
+    font-size: var(--size-50);
+}
 
     .price-card p {
         color: var(--font-color-base);
