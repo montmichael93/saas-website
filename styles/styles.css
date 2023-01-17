@@ -28,16 +28,16 @@
         color: #ffffff
     }
 
-.navbar-toggler {
+[aria-controls=navbarDropdown] {
+    display: none;
+}
+
+[aria-expanded="false"] ~ ul {
     display: none;
 }
 
 
 
-.navbarDropdown {
-      display: none;
-  position: absolute;
-}
 
 .empowerment-container {
     display: inline-flex;

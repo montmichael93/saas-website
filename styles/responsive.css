@@ -5,18 +5,25 @@
         background-color: blue;
     }
 
+    [aria-controls=navbarDropdown] {
+        display: block;
+    }
+
+
+  
+
+      [aria-expanded="false"] ~ ul {
+          display: none;
+      }
+
+     [aria-expanded="true"] ~ ul {
+         display: block;
+     }
+
     .nav-links {
         display: none;
     }
 
-
-    .navbar-toggler {
-        display: contents
-    }
-
-    .navbar-toggler:hover {
-        display: block
-    }
 
     .empowerment-container {
         display: flex;
@@ -63,7 +70,6 @@
     .service-card {
         max-width: -webkit-fill-available;
         padding: var(--size-30) var(--size-10);
-        
     }
 
 
@@ -79,45 +85,52 @@
         text-align: center;
     }
 
+
+
+    .perspective-image img {
+        width: -webkit-fill-available;
     }
 
-.perspective-image img {
-    width: -webkit-fill-available;
-}
+
+    .executive-container {
+        display: grid;
+        grid-template-columns: .5fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: var(--size-50);
+        margin-right: 0;
+    }
 
 
-.executive-container {
-    display: grid;
-    grid-template-columns: .5fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: var(--size-50);
-    margin-right: 0;
-}
-}
+    
 
+    .executive-dots {
+        grid-area: 1 / 1 / 2 / 2;
+    }
 
-.executive-dots {
-    grid-area: 1 / 1 / 2 / 2;
-}
+    .executive-director {
+        grid-area: 1 / 2 / 2 / 3;
+    }
 
-.executive-director {
-    grid-area: 1 / 2 / 2 / 3;
-}
-
-.testimonial {
-    grid-area: 2 / 1 / 3 / 3;
-    text-align: center;
-}
+    .testimonial {
+        grid-area: 2 / 1 / 3 / 3;
+        text-align: center;
+    }
 
 
 
-.executive-dots {
-    left: 75%;
-    position: relative;
-    top: 17%;
-    z-index: -1;
-}
+    .executive-dots {
+        left: 75%;
+        position: relative;
+        top: 17%;
+        z-index: -1;
+    }
+
+
+    .trusted h4 {
+        margin-top: 0;
+    }
+
 
 
     .pricing-container {
@@ -233,10 +246,7 @@
         margin-right: 0;
         margin-left: 0;
     }
-
-
-    
-
+}
 
 
 
@@ -244,7 +254,6 @@
     @media (min-width: 360px) and (max-width: 767px) {
         body {
             background-color: #aa27bd;
-            
         }
 
 
@@ -253,8 +262,12 @@
         }
 
 
-        .navbar-toggler {
-            display: contents
+      [aria-expanded="false"] ~ ul {
+          display: none;
+      }
+
+        [aria-controls=navbarDropdown] {
+            display: block;
         }
 
         .empowerment-container {
@@ -271,9 +284,9 @@
         }
 
 
-         .card-container {
-             display: flex;
-             flex-direction: column;
+        .card-container {
+            display: flex;
+            flex-direction: column;
         }
 
         .service-card {
@@ -301,6 +314,44 @@
             width: -webkit-fill-available;
         }
 
+
+        .executive-container {
+            display: grid;
+            grid-template-columns: .5fr 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: var(--size-50);
+            margin-right: 0;
+        }
+
+
+
+        .executive-dots {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+
+        .executive-director {
+            grid-area: 1 / 2 / 2 / 3;
+        }
+
+        .testimonial {
+            grid-area: 2 / 1 / 3 / 3;
+            text-align: center;
+        }
+
+
+
+        .executive-dots {
+            left: 75%;
+            position: relative;
+            top: 17%;
+            z-index: -1;
+        }
+
+
+        .trusted h4 {
+            margin-top: 0;
+        }
 
 
         .logo-container {
@@ -335,13 +386,19 @@
             position: initial;
             left: 115%;
             bottom: 40%;
-            /* justify-content: space-evenly; */
+            justify-content: space-evenly;
         }
 
         .head-of-comm {
             position: initial;
             left: 130%;
             bottom: 35%;
+        }
+
+        .hire-us .form {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
         }
 
 
@@ -358,10 +415,7 @@
         .bottom-footer {
             flex-direction: column;
             align-items: center;
-
-        }
-
         }
 
 
-        
+    } 
