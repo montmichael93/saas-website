@@ -1,9 +1,6 @@
 @media (min-width: 768px) and (max-width: 1023px) {
 
 
-    body {
-        background-color: blue;
-    }
 
     [aria-controls=navbarDropdown] {
         display: block;
@@ -62,6 +59,10 @@
             display: none;
         }
 
+    .nav-container {
+        margin: var(--size-20);
+    }
+
 
     .empowerment-container {
         display: flex;
@@ -73,6 +74,10 @@
 
     .icon-logo-container {
         margin-right: 0;
+        grid-row-gap: 0rem;
+        grid-column-gap: 0rem;
+        grid-column-gap: var(--size-30);
+        margin-top: 0;
     }
 
 
@@ -116,7 +121,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        gap: var(--size-100);
+        gap: var(--size-50);
     }
 
     .perspective-text {
@@ -129,6 +134,12 @@
         width: -webkit-fill-available;
     }
 
+
+
+    .why-front {
+        margin-top: var(--size-50);
+        margin-bottom: var(--size-50);
+    }
 
     .executive-container {
         display: grid;
@@ -148,6 +159,8 @@
 
     .executive-director {
         grid-area: 1 / 2 / 2 / 3;
+        position: relative;
+        right: 20%;
     }
 
     .testimonial {
@@ -158,7 +171,7 @@
 
 
     .executive-dots {
-        left: 75%;
+        left: 40%;
         position: relative;
         top: 17%;
         z-index: -1;
@@ -200,6 +213,11 @@
         grid-area: 3 / 2 / 4 / 3;
     }
 
+
+    .price-card {
+        padding: 0rem;
+    }
+
     .hire-us {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -231,15 +249,17 @@
 
     .head-of-comm {
         position: relative;
-        left: 130%;
+        left: 100%;
         bottom: 35%;
+        padding-left: var(--size-50);
     }
 
     .hire-human {
         position: relative;
-        left: 115%;
+        left: 107%;
         bottom: 40%;
         justify-content: space-evenly;
+        padding-right: var(--size-50);
     }
 
 
@@ -249,11 +269,12 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        margin-left: var(--size-100);
+        margin-left: 0rem;
     }
 
     .contact-footer {
         grid-area: 1 / 1 / 2 / 2;
+        padding-left: var(--size-20);
     }
 
 
@@ -290,9 +311,7 @@
 
 
     @media (min-width: 360px) and (max-width: 767px) {
-        body {
-            background-color: #aa27bd;
-        }
+ 
 
 
         .navbar-toggler {
