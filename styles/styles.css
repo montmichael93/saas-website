@@ -43,9 +43,10 @@
 .empowerment-container {
     display: inline-flex;
     margin-left: var(--size-100);
-    margin-top: var(--size-100);
     gap: var(--size-150);
 }
+
+
 
 
 
@@ -102,8 +103,9 @@
 
 
 .empower p {
-    font-size: var(--size-20);
+    font-size: var(--size-16);
     margin-top: auto;
+    color: var(--font-color-base);
 }
 
 .sub-empower a {
@@ -135,6 +137,7 @@
     .service-header p {
         margin-top: 0;
         font-size: var(--size-20);
+        color: var(--font-color-base);
     }
 /*
 .card-container {
@@ -190,6 +193,8 @@
 
     .service-card p {
         font-size: var(--size-20);
+        color: var(--font-color-base);
+    }
     }
 
     .service-card span {
@@ -201,10 +206,11 @@
     }
 
 
-    .perspective-container {
-        display: flex;
-        justify-content: space-evenly;
-    }
+.perspective-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 var(--size-14);
+}
 
 .perspective-text h4 {
     font-size: var(--size-40);
@@ -219,13 +225,16 @@
     margin-bottom: var(--size-150);
 }
 
-.why-front h2 {
-    font-size: var(--size-40);
-}
+    .why-front h2 {
+        font-size: var(--size-40);
+        margin-bottom: 0;
+    }
 
-.why-front p {
-    font-size: var(--size-20);
-}
+    .why-front p {
+        font-size: var(--size-20);
+        color: var(--font-color-base);
+        margin-top: 0;
+    }
 
 .four-dots {
     display: flex;
@@ -253,6 +262,7 @@
     justify-content: space-around;
     font-size: var(--size-20);
     margin-bottom: var(--size-50);
+    color: var(--font-color-dark);
 }
 
 
@@ -327,6 +337,7 @@
     text-align: center;
     font-size: var(--size-20);
     margin-top: var(--size-150);
+    color: var(--font-color-base);
 }
 
 
@@ -356,6 +367,7 @@
     .pricing-header p {
         font-size: var(--size-18);
         margin-top: auto;
+        color: var(--font-color-base);
     }
 
 .pricing-container {

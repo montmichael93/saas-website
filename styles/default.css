@@ -38,9 +38,7 @@ body {
 }
 
 
-* {
-    outline: 1px solid #f00 !important;
-}
+
 
 ::after ::before {
     box-sizing: border-box;

@@ -40,13 +40,17 @@
             line-height: 1.25rem;
         }
 
-    .trigram-menu li button {
-        position: absolute;
-        bottom: 60%;
-        right: 45%;
-        padding: var(--size-20);
-        width: var(--size-150);
-    }
+            [aria-expanded="true"] ~ button {
+                display: none;
+            } 
+
+            .trigram-menu li button {
+                position: absolute;
+                bottom: 60%;
+                right: 43%;
+                padding: var(--size-20);
+                width: var(--size-150);
+            }
     
 
         .trigram-menu li button a {
@@ -70,14 +74,36 @@
         align-items: center;
         margin: 0;
         gap: var(--size-50);
+        text-align: center;
     }
+
+    .empower h1 {
+        font-size: var(--size-40);
+    }
+
+    
 
     .icon-logo-container {
         margin-right: 0;
         grid-row-gap: 0rem;
         grid-column-gap: 0rem;
-        grid-column-gap: var(--size-30);
         margin-top: 0;
+    }
+
+    .service-header h2 {
+        font-size: var(--size-30);
+    }
+
+    .service-card img {
+        width: var(--size-50);
+    }
+
+    .service-card h4 {
+        font-size: var(--size-20);
+    }
+
+    .service-card p {
+        font-size: var(--size-14);
     }
 
 
@@ -86,11 +112,13 @@
         grid-template-areas:
             "respond custom"
             "prem docu";
-        margin-top: var(--size-100);
-        margin-bottom: var(--size-100);
+        margin-top: var(--size-50);
+        margin-bottom: var(--size-50);
         grid-row-gap: var(--size-50);
         grid-column-gap: var(--size-20);
         grid-row-gap: var(--size-20);
+        margin-left: var(--size-20);
+        margin-right: var(--size-20);
     }
 
 
@@ -122,6 +150,7 @@
         align-items: center;
         flex-direction: column;
         gap: var(--size-50);
+        margin: 0;
     }
 
     .perspective-text {
@@ -137,9 +166,13 @@
 
 
     .why-front {
-        margin-top: var(--size-50);
+        margin-top: auto;
         margin-bottom: var(--size-50);
     }
+
+        .why-front h2 {
+            font-size: var(--size-30);
+        }
 
     .executive-container {
         display: grid;
@@ -168,7 +201,7 @@
         text-align: center;
     }
 
-
+    
 
     .executive-dots {
         left: 40%;
@@ -176,13 +209,22 @@
         top: 17%;
         z-index: -1;
     }
-
+     
+    .hubspot-logo {
+        width: var(--size-100);
+    }
 
     .trusted h4 {
         margin-top: 0;
     }
 
-
+    .logo-container img {
+        width: var(--size-100);
+    }
+ 
+    .pricing-header {
+        margin-top: var(--size-50);
+    }
 
     .pricing-container {
         display: grid;
@@ -190,6 +232,8 @@
         grid-template-rows: 2fr repeat(2, 1fr);
         grid-column-gap: var(--size-100);
         grid-row-gap: var(--size-50);
+        margin: var(--size-20);
+        
     }
 
     #main-card {
@@ -215,7 +259,28 @@
 
 
     .price-card {
-        padding: 0rem;
+        padding: 0 var(--size-50);
+    }
+
+    .price-card h4 {
+        font-size: var(--size-50);
+        margin-bottom: auto;
+    }
+
+    .price-card p {
+        font-size: var(--size-30);
+    }
+
+    #card-butt {
+        margin-top: var(--size-100);
+    }
+
+    .pricing-subcard h4 {
+        font-size: var(--size-20);
+    }
+
+    .pricing-subcard p {
+        font-size: var(--size-18);
     }
 
     .hire-us {
@@ -232,7 +297,7 @@
 
     .hire-header {
         grid-area: 1 / 1 / 2 / 2;
-        margin-left: auto;
+        margin-left: var(--size-20);
         position: relative;
         top: 20%;
     }
@@ -241,7 +306,7 @@
 
 
     .hire-us .form {
-        width: 80%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -270,6 +335,7 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         margin-left: 0rem;
+        font-size: var(--size-20);
     }
 
     .contact-footer {
@@ -301,9 +367,13 @@
 
     .bottom-footer {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         margin-right: 0;
         margin-left: 0;
+    }
+
+    .last-text {
+        font-size: var(--size-18);
     }
 }
 
@@ -331,7 +401,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-evenly;
+            
             position: absolute;
             right: 0;
             top: var(--size-100);
@@ -341,16 +411,18 @@
             box-shadow: 0px 0px 20px rgb(52 49 75 / 10%);
             background-color: whitesmoke;
             padding-top: 0rem;
+            margin-top: var(--size-50);
+            gap: var(--size-50);
         }
 
             [aria-expanded="true"] ~ ul li a {
-                margin-right: var(--size-20);
+                
                 color: var(--font-color-dark);
                 font-size: 0.8125rem;
                 font-weight: 600;
                 font-family: "hind", sans-serif;
                 text-transform: uppercase;
-                margin-right: 2.5rem;
+                
                 line-height: 1.25rem;
             }
 
@@ -358,9 +430,10 @@
                 text-align: center;
             }
 
+ 
         .trigram-menu li button {
             position: absolute;
-            bottom: 8%;
+            bottom: 45%;
             right: 30%;
             padding: var(--size-20);
             width: var(--size-150);
@@ -389,10 +462,21 @@
             flex-direction: column;
             align-items: center;
             margin: 0;
-            gap: var(--size-50);
+            gap: var(--size-20);
             text-align: center;
         }
 
+        .empower h1 {
+            font-size: var(--size-30);
+        }
+
+        .empower p {
+            font-size: var(--size-16);
+        }
+
+        .empowerment-container img {
+            width: var(--size-30);
+        }
 
         .icon-logo-container {
             margin-right: 0;
@@ -403,20 +487,47 @@
         }
 
 
+
+        .service-header h2 {
+            font-size: var(--size-30);
+        }
+
+        .service-header p {
+            font-size: var(--size-16);
+        }
+
+
         .card-container {
             display: flex;
             flex-direction: column;
+            margin: 0 var(--size-20);
+            gap: var(--size-18);
         }
 
         .service-card {
             border-style: hidden;
             font-size: var(--size-20);
-            padding: var(--size-20) var(--size-50);
+            padding: var(--size-20) var(--size-20);
             box-shadow: 0 5px 5px #a09f9f;
             width: -webkit-fill-available;
             max-width: -webkit-fill-available;
         }
 
+            .service-card img {
+                width: var(--size-50);
+            }
+
+            .service-card h4 {
+                font-size: var(--size-20)
+            }
+
+            .service-card p {
+                font-size: var(--size-16);
+            }
+
+            .service-card span {
+                font-size: var(--size-14);
+            }
 
         .perspective-container {
             display: flex;
@@ -425,8 +536,13 @@
 
         .perspective-text {
             text-align: center;
+            margin-bottom: var(--size-50);
         }
 
+            .perspective-text h4 {
+                font-size: var(--size-30);
+                margin-bottom: 0;
+            }
 
         .perspective-image img {
             width: -webkit-fill-available;
@@ -436,6 +552,16 @@
             margin-top: var(--size-50);
             margin-bottom: var(--size-50);
         }
+
+            .why-front h2 {
+                font-size: var(--size-30);
+                margin-bottom: 0;
+            }
+
+            .why-front p {
+                font-size: var(--size-16);
+            }
+
 
 
         #line-dot {
@@ -456,9 +582,9 @@
             gap: var(--size-100);
         }
 
-        .full-image {
+        .full-image img {
             width: -webkit-fill-available;
-            margin-top: var(--size-30);
+            margin: 0;
         }
 
         .executive-container {
@@ -480,7 +606,7 @@
         .executive-director {
             grid-area: 1 / 2 / 2 / 3;
             position: relative;
-            right: 25%;
+            right: 20%;
         }
 
         .testimonial {
@@ -491,15 +617,24 @@
 
 
         .executive-dots {
-            left: 25%;
+            left: 35%;
             position: relative;
-            top: 8%;
+            top: 15%;
             z-index: -1;
         }
 
+        .hubspot-logo {
+            width: var(--size-100);
+        }
+
+
+        .testimonial p {
+            font-size: var(--size-20);
+        }
 
         .trusted h4 {
-            margin-top: 0;
+            margin-top: var(--size-50);
+            margin-bottom: var(--size-50);
         }
 
 
@@ -510,18 +645,37 @@
             gap: var(--size-50);
         }
 
+            .logo-container img {
+                width: var(--size-100);
+            }
+
+        .pricing-header {
+            margin-top: var(--size-50);
+        }
 
         .pricing-container {
             display: flex;
             flex-direction: column;
-            gap: var(--size-30);
-            margin: var(--size-20);
+            gap: var(--size-50);
+            margin: 0 var(--size-20) var(--size-50);
         }
 
         .price-card {
-            margin: var(--size-20);
+            padding: 0 var(--size-30);
+            text-align: center;
         }
 
+        .pricing-subcard h4 {
+            font-size: var(--size-20);
+        }
+
+        .pricing-subcard p {
+            font-size: var(--size-18);
+        }
+
+        .pricing-subcard span {
+            font-size: var(--size-14);
+        }
 
         .hire-us {
             display: flex;
@@ -535,12 +689,17 @@
             text-align: center;
         }
 
+            .hire-header p {
+                font-size: var(--size-16);
+            }
+
 
         .hire-human {
             position: initial;
             left: 115%;
             bottom: 40%;
             justify-content: space-evenly;
+            margin-bottom: var(--size-50);
         }
 
         .head-of-comm {
@@ -550,14 +709,23 @@
         }
 
         .hire-us .form {
-            width: 90%;
+            width: 80%;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .bottom-form-text p {
+            font-size: var(--size-18);
+        }
+
+        .hire-us h2 {
+            font-size: var(--size-16);
         }
 
         .input-group {
             flex-direction: column;
             height: auto;
+            gap: var(--size-30);
         }
 
             .input-group input {
@@ -570,12 +738,14 @@
 
 
 
+
         .footer-container {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-left: 0;
             text-align: center;
+            font-size: var(--size-20);
         }
 
 
@@ -587,6 +757,7 @@
 
         #bottom-directory {
             width: max-content;
+            font-size: var(--size-20);
         }
 
 
@@ -613,6 +784,9 @@
             grid-area: 2 / 1 / 3 / 5;
         }
 
+        .last-text {
+            font-size: var(--size-16);
+        }
         
     } 
 
