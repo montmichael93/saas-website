@@ -1,4 +1,4 @@
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 
 
 
@@ -174,6 +174,15 @@
             font-size: var(--size-30);
         }
 
+
+
+    #full-play {
+        font-size: var(--size-100);
+        transform: translate(312%, -204%);
+    }
+    
+
+
     .executive-container {
         display: grid;
         grid-template-columns: .5fr 1fr;
@@ -297,9 +306,11 @@
 
     .hire-header {
         grid-area: 1 / 1 / 2 / 2;
-        margin-left: var(--size-20);
+        margin-left: var(--size-30);
         position: relative;
         top: 20%;
+        width: 75%;
+        
     }
 
 
@@ -314,17 +325,16 @@
 
     .head-of-comm {
         position: relative;
-        left: 100%;
+        left: 155%;
         bottom: 35%;
-        padding-left: var(--size-50);
+       
     }
 
     .hire-human {
         position: relative;
-        left: 100%;
+        left: 155%;
         bottom: 40%;
-        justify-content: space-evenly;
-        padding-right: var(--size-50);
+        gap: var(--size-50);
     }
 
 
@@ -405,7 +415,6 @@
             position: absolute;
             right: 0;
             top: var(--size-100);
-            /* background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.7)); */
             width: -webkit-fill-available;
             height: -webkit-fill-available;
             box-shadow: 0px 0px 20px rgb(52 49 75 / 10%);
@@ -587,6 +596,11 @@
             margin: 0;
         }
 
+        #full-play {
+            font-size: var(--size-50);
+            transform: translate(271%, -194%);
+        }
+
         .executive-container {
             display: grid;
             grid-template-columns: .5fr 1fr;
@@ -685,9 +699,10 @@
 
 
         .hire-header {
-            margin-left: 0;
             text-align: center;
+            margin: 0 var(--size-20);
         }
+        
 
             .hire-header p {
                 font-size: var(--size-16);
@@ -698,8 +713,8 @@
             position: initial;
             left: 115%;
             bottom: 40%;
-            justify-content: space-evenly;
-            margin-bottom: var(--size-50);
+            gap: var(--size-100);
+            justify-content: center;
         }
 
         .head-of-comm {
@@ -719,7 +734,16 @@
         }
 
         .hire-us h2 {
-            font-size: var(--size-16);
+            
+            font-size: var(--size-20);
+        }
+
+        .head-of-comm h4 {
+            font-size: var(--size-10);
+        }
+
+        .head-of-comm h5 {
+            font-size: var(--size-10);
         }
 
         .input-group {

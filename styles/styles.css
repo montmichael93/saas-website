@@ -9,15 +9,18 @@
     }
 
 
+
+
 .nav-links a {
+    text-decoration: none;
+    margin: var(--size-10);
+    font-size: var(--size-20);
     color: var(--font-color-base);
 }
 
-.nav-links a {
-   text-decoration: none;
-   margin: var(--size-10);
-       font-size: var(--size-20);
-    }
+.nav-links a:hover {
+    color: #0d25f4;
+}
 
 .buy-now-button {
     border-radius: var(--size-50);
@@ -139,23 +142,15 @@
         font-size: var(--size-20);
         color: var(--font-color-base);
     }
-/*
+
 .card-container {
     display: flex;
     justify-content: space-evenly;
-    margin-top: var(--size-100);
-    margin-bottom: var(--size-100);
+    margin: var(--size-100) var(--size-20);
+    gap: var(--size-30);
 }
 
-    */
-
-.card-container {
-    display: grid;
-    grid-template-areas:
-        "respond custom prem docu";
-        margin-top: var(--size-100);
-    margin-bottom: var(--size-100);
-}
+    
 
 
 #responsive {
@@ -183,6 +178,10 @@
     box-shadow: 0 5px 5px #a09f9f
 }
 
+.service-card:hover {
+    background-color: #928e8e;
+}
+
     .service-card img {
         width: var(--size-100);
     }
@@ -195,7 +194,7 @@
         font-size: var(--size-20);
         color: var(--font-color-base);
     }
-    }
+    
 
     .service-card span {
         font-size: var(--size-16);
@@ -212,12 +211,15 @@
     margin: 0 var(--size-14);
 }
 
+
+
 .perspective-text h4 {
     font-size: var(--size-40);
 }
 
-
-
+.perspective-text{
+    background-color: #ffffff;
+}
 
 .why-front {
     text-align: center;
@@ -247,11 +249,12 @@
 }
 
 #dot {
-    background-color: cornflowerblue;
+    background-color: #487ac5;
     border-radius: 100%;
     width: var(--size-50);
     text-align: center;
-    margin-bottom: var(--size-50)
+    margin-bottom: var(--size-50);
+    color: blue;
 }
 
 
@@ -273,6 +276,12 @@
     margin: var(--size-30);
 }
 
+#full-play {
+    font-size: var(--size-150);
+    transform: translate(320%, -223%);
+    background-color: transparent;
+    border-style: none;
+}
 
 
 .executive-container {
@@ -490,7 +499,7 @@
 .hire-human {
     margin-top: var(--size-50);
     display: flex;
-    justify-content: space-between;
+    gap: var(--size-150);
 }
 
     .hire-human img {
@@ -558,6 +567,9 @@
     margin-bottom: var(--size-50);
 }
 
+.footer-container li a:hover{
+    color: #1d1ddd;
+}
 
 .contact-footer img {
     width: var(--size-150);
@@ -635,6 +647,8 @@
 
 
 
+
+
 .social-buttons button, .social-buttons select {
     margin: var(--size-10);
     padding: var(--size-10);
@@ -642,6 +656,8 @@
     border-radius: var(--size-10);
     background-color: #d4cccc
 }
+
+
 
 
 
@@ -658,4 +674,5 @@
     text-align: center;
     color: var(--font-color-base);
 }
+
 
