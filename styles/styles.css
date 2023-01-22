@@ -9,8 +9,6 @@
     }
 
 
-
-
 .nav-links a {
     text-decoration: none;
     margin: var(--size-10);
@@ -18,9 +16,9 @@
     color: var(--font-color-base);
 }
 
-.nav-links a:hover {
-    color: #0d25f4;
-}
+    .nav-links a:hover {
+        color: #0d25f4;
+    }
 
 .buy-now-button {
     border-radius: var(--size-50);
@@ -41,18 +39,11 @@
 }
 
 
-
-
 .empowerment-container {
     display: inline-flex;
     margin-left: var(--size-100);
     gap: var(--size-150);
 }
-
-
-
-
-
 
 
 .icon-logo-container {
@@ -64,9 +55,6 @@
     grid-column-gap: var(--size-50);
     margin-top: var(--size-50);
 }
-
-
-
 
 
 .paypal {
@@ -97,7 +85,11 @@
     grid-area: 5 / 7 / 6 / 8;
 }
 
-    
+
+#google {
+    width: var(--size-30);
+}
+
 
 .empower h1 {
     font-size: var(--size-50);
@@ -119,9 +111,9 @@
 
 .empowerment-container img {
     width: var(--size-50);
-    border-style: groove;
     border-radius: 100%;
     padding: var(--size-10);
+    box-shadow: 0px 0px 5px 0px #888888;
 }
 
 
@@ -150,8 +142,6 @@
     gap: var(--size-30);
 }
 
-    
-
 
 #responsive {
     grid-area: respond;
@@ -178,9 +168,9 @@
     box-shadow: 0 5px 5px #a09f9f
 }
 
-.service-card:hover {
-    background-color: #928e8e;
-}
+    .service-card:hover {
+        background-color: #928e8e;
+    }
 
     .service-card img {
         width: var(--size-100);
@@ -194,7 +184,7 @@
         font-size: var(--size-20);
         color: var(--font-color-base);
     }
-    
+
 
     .service-card span {
         font-size: var(--size-16);
@@ -212,12 +202,11 @@
 }
 
 
-
 .perspective-text h4 {
     font-size: var(--size-40);
 }
 
-.perspective-text{
+.perspective-text {
     background-color: #ffffff;
 }
 
@@ -250,15 +239,13 @@
 }
 
 #dot {
-    background-color: #487ac5;
+    background-color: #afccf8;
     border-radius: 100%;
     width: var(--size-50);
     text-align: center;
     margin-bottom: var(--size-50);
     color: blue;
 }
-
-
 
 
 .dot-offers {
@@ -268,8 +255,6 @@
     margin-bottom: var(--size-50);
     color: var(--font-color-dark);
 }
-
-
 
 
 .full-image img {
@@ -294,10 +279,8 @@
 }
 
 
-
 .executive-dots {
     grid-area: 1 / 1 / 2 / 2;
-
 }
 
 
@@ -317,16 +300,10 @@
 }
 
 
+.executive-director img {
+    width: 85%;
+}
 
-
-    
-
-    .executive-director img {
-        width: 85%;
-        
-    }
-
-    
 
 .hubspot-logo {
     width: var(--size-150);
@@ -339,9 +316,9 @@
 }
 
 
-.testimonial p {
-    font-size: var(--size-30)
-}
+    .testimonial p {
+        font-size: var(--size-30)
+    }
 
 .trusted h4 {
     text-align: center;
@@ -357,10 +334,9 @@
 }
 
 
-.logo-container img {
-    width: var(--size-150);
-}
-
+    .logo-container img {
+        width: var(--size-150);
+    }
 
 
 .pricing-header {
@@ -369,10 +345,10 @@
     margin-top: var(--size-100);
 }
 
-.pricing-header h4 {
-    font-size: var(--size-30);
-    margin-bottom: 0;
-}
+    .pricing-header h4 {
+        font-size: var(--size-30);
+        margin-bottom: 0;
+    }
 
     .pricing-header p {
         font-size: var(--size-18);
@@ -420,25 +396,24 @@
 }
 
 
-
-    .pricing-subcard span {
-        font-size: var(--size-16);
-        background-color: #1ac731;
-        padding: var(--size-10);
-        border-radius: var(--size-20);
-        color: var(--white);
-    }
+.pricing-subcard span {
+    font-size: var(--size-16);
+    background-color: #1ac731;
+    padding: var(--size-10);
+    border-radius: var(--size-20);
+    color: var(--white);
+}
 
 
 .price-card h4 {
     font-size: var(--size-50);
 }
 
-    .price-card p {
-        color: var(--font-color-base);
-        font-size: var(--size-20);
-        margin-top: var(--size-30);
-    }
+.price-card p {
+    color: var(--font-color-base);
+    font-size: var(--size-20);
+    margin-top: var(--size-30);
+}
 
 .pricing-subcard img {
     width: var(--size-100);
@@ -460,18 +435,17 @@
     display: flex;
     justify-content: space-around;
     margin-top: var(--size-150);
-   
 }
 
 .hire-header {
     margin-top: inherit;
 }
 
-.hire-header h2 {
-    font-size: var(--size-30);
-    color: #ffffff;
+    .hire-header h2 {
+        font-size: var(--size-30);
+        color: #ffffff;
         margin-bottom: 0;
-}
+    }
 
     .hire-header p {
         font-size: var(--size-20);
@@ -482,7 +456,7 @@
 
 .hire-subheader p {
     color: #ffffff;
-        margin-top: var(--size-30);
+    margin-top: var(--size-30);
 }
 
 .head-of-comm h4 {
@@ -523,7 +497,6 @@
     justify-content: center;
     height: var(--size-50);
     gap: var(--size-20);
-    
 }
 
     .input-group input {
@@ -568,26 +541,13 @@
     margin-bottom: var(--size-50);
 }
 
-.footer-container li a:hover{
-    color: #1d1ddd;
-}
+    .footer-container li a:hover {
+        color: #1d1ddd;
+    }
 
 .contact-footer img {
     width: var(--size-150);
 }
-
-
-.contact-footer li {
-    margin-bottom: var(--size-10);
-    
-}
-
-.company-footer li {
-    margin-bottom: var(--size-10);
-
-}
-
-
 
 .company-footer h6 {
     display: inline;
@@ -598,22 +558,9 @@
     border-radius: 0.3rem;
 }
 
-.feature-footer li {
+.feature-footer li, .docu-footer li, .resources-footer li, .contact-footer li, .company-footer li {
     margin-bottom: var(--size-10);
 }
-
-
-.docu-footer li {
-    margin-bottom: var(--size-10);
-}
-
-
-
-.resources-footer li {
-    margin-bottom: var(--size-10);
-}
-
-
 
 
 .footer-container a {
@@ -639,6 +586,7 @@
     margin-right: var(--size-150);
     margin-left: var(--size-150);
 }
+
 }
 
 #bottom-directory {
@@ -647,10 +595,8 @@
 }
 
 
-
-
-
-.social-buttons button, .social-buttons select {
+.social-buttons button,
+.social-buttons select {
     margin: var(--size-10);
     padding: var(--size-10);
     border-style: hidden;
@@ -659,21 +605,14 @@
 }
 
 
-
-
-
 .last-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
-
 
 
 .last-text {
     text-align: center;
     color: var(--font-color-base);
 }
-
-

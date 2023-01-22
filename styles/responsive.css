@@ -1,7 +1,6 @@
 @media (min-width: 768px) and (max-width: 1024px) {
 
 
-
     [aria-controls=navbarDropdown] {
         display: block;
     }
@@ -9,11 +8,11 @@
     .navbar-toggler {
         position: inherit;
     }
-  
 
-      [aria-expanded="false"] ~ ul {
-          display: none;
-      }
+
+    [aria-expanded="false"] ~ ul {
+        display: none;
+    }
 
     [aria-expanded="true"] ~ ul {
         display: flex;
@@ -40,28 +39,27 @@
             line-height: 1.25rem;
         }
 
-            [aria-expanded="true"] ~ button {
-                display: none;
-            } 
+    [aria-expanded="true"] ~ button {
+        display: none;
+    }
 
-            .trigram-menu li button {
-                position: absolute;
-                bottom: 60%;
-                right: 43%;
-                padding: var(--size-20);
-                width: var(--size-150);
-            }
-    
+    .trigram-menu li button {
+        position: absolute;
+        bottom: 60%;
+        right: 43%;
+        padding: var(--size-20);
+        width: var(--size-150);
+    }
+
 
         .trigram-menu li button a {
             margin-right: 0;
         }
 
 
-
-        .nav-links {
-            display: none;
-        }
+    .nav-links {
+        display: none;
+    }
 
     .nav-container {
         margin: var(--size-20);
@@ -81,7 +79,6 @@
         font-size: var(--size-40);
     }
 
-    
 
     .icon-logo-container {
         margin-right: 0;
@@ -144,7 +141,6 @@
     }
 
 
-
     .perspective-container {
         display: flex;
         align-items: center;
@@ -158,11 +154,9 @@
     }
 
 
-
     .perspective-image img {
         width: -webkit-fill-available;
     }
-
 
 
     .why-front {
@@ -175,12 +169,10 @@
         }
 
 
-
     #full-play {
         font-size: var(--size-100);
         transform: translate(312%, -204%);
     }
-    
 
 
     .executive-container {
@@ -192,8 +184,6 @@
         margin-right: 0;
     }
 
-
-    
 
     .executive-dots {
         grid-area: 1 / 1 / 2 / 2;
@@ -210,7 +200,6 @@
         text-align: center;
     }
 
-    
 
     .executive-dots {
         left: 40%;
@@ -218,7 +207,7 @@
         top: 17%;
         z-index: -1;
     }
-     
+
     .hubspot-logo {
         width: var(--size-100);
     }
@@ -230,7 +219,7 @@
     .logo-container img {
         width: var(--size-100);
     }
- 
+
     .pricing-header {
         margin-top: var(--size-50);
     }
@@ -242,7 +231,6 @@
         grid-column-gap: var(--size-100);
         grid-row-gap: var(--size-50);
         margin: var(--size-20);
-        
     }
 
     #main-card {
@@ -271,14 +259,14 @@
         padding: 0 var(--size-50);
     }
 
-    .price-card h4 {
-        font-size: var(--size-50);
-        margin-bottom: auto;
-    }
+        .price-card h4 {
+            font-size: var(--size-50);
+            margin-bottom: auto;
+        }
 
-    .price-card p {
-        font-size: var(--size-30);
-    }
+        .price-card p {
+            font-size: var(--size-30);
+        }
 
     #card-butt {
         margin-top: var(--size-100);
@@ -310,10 +298,7 @@
         position: relative;
         top: 20%;
         width: 75%;
-        
     }
-
-
 
 
     .hire-us .form {
@@ -327,7 +312,6 @@
         position: relative;
         left: 155%;
         bottom: 35%;
-       
     }
 
     .hire-human {
@@ -336,8 +320,6 @@
         bottom: 40%;
         gap: var(--size-50);
     }
-
-
 
 
     .footer-container {
@@ -371,10 +353,6 @@
     }
 
 
-
-
-
-
     .bottom-footer {
         display: flex;
         justify-content: space-around;
@@ -388,453 +366,421 @@
 }
 
 
+@media (min-width: 360px) and (max-width: 767px) {
 
 
-    @media (min-width: 360px) and (max-width: 767px) {
- 
+    .navbar-toggler {
+        position: inherit;
+    }
+
+    .nav-links {
+        display: none;
+    }
 
 
-        .navbar-toggler {
-            position: inherit;
+    [aria-expanded="false"] ~ ul {
+        display: none;
+    }
+
+    [aria-expanded="true"] ~ ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: var(--size-100);
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+        box-shadow: 0px 0px 20px rgb(52 49 75 / 10%);
+        background-color: whitesmoke;
+        padding-top: 0rem;
+        margin-top: var(--size-50);
+        gap: var(--size-50);
+    }
+
+        [aria-expanded="true"] ~ ul li a {
+            color: var(--font-color-dark);
+            font-size: 0.8125rem;
+            font-weight: 600;
+            font-family: "hind", sans-serif;
+            text-transform: uppercase;
+            line-height: 1.25rem;
         }
 
-        .nav-links {
-            display: none;
+    .trigram-menu li a {
+        text-align: center;
+    }
+
+
+    .trigram-menu li button {
+        position: absolute;
+        bottom: 45%;
+        right: 30%;
+        padding: var(--size-20);
+        width: var(--size-150);
+    }
+
+
+        .trigram-menu li button a {
+            margin-right: 0;
         }
 
+    [aria-controls=navbarDropdown] {
+        display: block;
+    }
 
-      [aria-expanded="false"] ~ ul {
-          display: none;
-      }
+    .trigram-menu li button {
+        padding: var(--size-10);
+        width: var(--size-150);
+    }
 
-        [aria-expanded="true"] ~ ul {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            
-            position: absolute;
-            right: 0;
-            top: var(--size-100);
-            width: -webkit-fill-available;
-            height: -webkit-fill-available;
-            box-shadow: 0px 0px 20px rgb(52 49 75 / 10%);
-            background-color: whitesmoke;
-            padding-top: 0rem;
-            margin-top: var(--size-50);
-            gap: var(--size-50);
+        .trigram-menu li button a {
+            margin-right: 0;
         }
 
-            [aria-expanded="true"] ~ ul li a {
-                
-                color: var(--font-color-dark);
-                font-size: 0.8125rem;
-                font-weight: 600;
-                font-family: "hind", sans-serif;
-                text-transform: uppercase;
-                
-                line-height: 1.25rem;
-            }
+    .empowerment-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        gap: var(--size-20);
+        text-align: center;
+    }
 
-            .trigram-menu li a {
-                text-align: center;
-            }
+    .empower h1 {
+        font-size: var(--size-30);
+    }
 
- 
-        .trigram-menu li button {
-            position: absolute;
-            bottom: 45%;
-            right: 30%;
-            padding: var(--size-20);
-            width: var(--size-150);
+    .empower p {
+        font-size: var(--size-16);
+    }
+
+    .empowerment-container img {
+        width: var(--size-30);
+    }
+
+    .icon-logo-container {
+        margin-right: 0;
+        grid-row-gap: 0rem;
+        grid-column-gap: 0rem;
+        margin-top: 0rem;
+    }
+
+
+    #google {
+        width: var(--size-20);
+    }
+
+
+    .service-header h2 {
+        font-size: var(--size-30);
+    }
+
+    .service-header p {
+        font-size: var(--size-16);
+    }
+
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 var(--size-20);
+        gap: var(--size-18);
+    }
+
+    .service-card {
+        border-style: hidden;
+        font-size: var(--size-20);
+        padding: var(--size-20) var(--size-20);
+        box-shadow: 0 5px 5px #a09f9f;
+        width: -webkit-fill-available;
+        max-width: -webkit-fill-available;
+    }
+
+        .service-card img {
+            width: var(--size-50);
         }
 
-
-            .trigram-menu li button a {
-                margin-right: 0;
-            }
-
-        [aria-controls=navbarDropdown] {
-            display: block;
+        .service-card h4 {
+            font-size: var(--size-20)
         }
 
-        .trigram-menu li button {
-            padding: var(--size-10);
-            width: var(--size-150);
-        }
-
-            .trigram-menu li button a {
-                margin-right: 0;
-            }
-
-        .empowerment-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0;
-            gap: var(--size-20);
-            text-align: center;
-        }
-
-        .empower h1 {
-            font-size: var(--size-30);
-        }
-
-        .empower p {
+        .service-card p {
             font-size: var(--size-16);
         }
 
-        .empowerment-container img {
-            width: var(--size-30);
-        }
-
-        .icon-logo-container {
-            margin-right: 0;
-            grid-row-gap: 0rem;
-            grid-column-gap: 0rem;
-            margin-top: 0rem;
-           
-        }
-
-
-
-        .service-header h2 {
-            font-size: var(--size-30);
-        }
-
-        .service-header p {
-            font-size: var(--size-16);
-        }
-
-
-        .card-container {
-            display: flex;
-            flex-direction: column;
-            margin: 0 var(--size-20);
-            gap: var(--size-18);
-        }
-
-        .service-card {
-            border-style: hidden;
-            font-size: var(--size-20);
-            padding: var(--size-20) var(--size-20);
-            box-shadow: 0 5px 5px #a09f9f;
-            width: -webkit-fill-available;
-            max-width: -webkit-fill-available;
-        }
-
-            .service-card img {
-                width: var(--size-50);
-            }
-
-            .service-card h4 {
-                font-size: var(--size-20)
-            }
-
-            .service-card p {
-                font-size: var(--size-16);
-            }
-
-            .service-card span {
-                font-size: var(--size-14);
-            }
-
-        .perspective-container {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .perspective-text {
-            text-align: center;
-            margin-bottom: var(--size-50);
-        }
-
-            .perspective-text h4 {
-                font-size: var(--size-30);
-                margin-bottom: 0;
-            }
-
-        .perspective-image img {
-            width: -webkit-fill-available;
-        }
-
-        .why-front {
-            margin-top: var(--size-50);
-            margin-bottom: var(--size-50);
-        }
-
-            .why-front h2 {
-                font-size: var(--size-30);
-                margin-bottom: 0;
-            }
-
-            .why-front p {
-                font-size: var(--size-16);
-            }
-
-
-
-        #line-dot {
-            display: none;
-        }
-
-        .four-dots {
-            display: inline-flex;
-            flex-direction: column;
-            gap: 1.25rem;
-            transform: translate(130%, 0%);
-        }
-
-        .dot-offers {
-            display: inline-flex;
-            flex-direction: column;
-            gap: 5.525rem;
-            transform: translate(43%, -2%);
-        }
-
-        .full-image img {
-            width: -webkit-fill-available;
-            margin: 0;
-        }
-
-        #full-play {
-            font-size: var(--size-50);
-            transform: translate(271%, -194%);
-        }
-
-        .executive-container {
-            display: grid;
-            grid-template-columns: .5fr 1fr;
-            grid-template-rows: repeat(2, .5fr);
-            grid-column-gap: 0px;
-            grid-row-gap: var(--size-50);
-            margin-right: 0;
-            margin-top: var(--size-50);
-        }
-
-
-
-        .executive-dots {
-            grid-area: 1 / 1 / 2 / 2;
-        }
-
-        .executive-director {
-            grid-area: 1 / 2 / 2 / 3;
-            position: relative;
-            right: 20%;
-        }
-
-        .testimonial {
-            grid-area: 2 / 1 / 3 / 3;
-            text-align: center;
-        }
-
-
-
-        .executive-dots {
-            left: 35%;
-            position: relative;
-            top: 15%;
-            z-index: -1;
-        }
-
-        .hubspot-logo {
-            width: var(--size-100);
-        }
-
-
-        .testimonial p {
-            font-size: var(--size-20);
-        }
-
-        .trusted h4 {
-            margin-top: var(--size-50);
-            margin-bottom: var(--size-50);
-        }
-
-
-        .logo-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: var(--size-50);
-        }
-
-            .logo-container img {
-                width: var(--size-100);
-            }
-
-        .pricing-header {
-            margin-top: var(--size-50);
-        }
-
-        .pricing-container {
-            display: flex;
-            flex-direction: column;
-            gap: var(--size-50);
-            margin: 0 var(--size-20) var(--size-50);
-        }
-
-        .price-card {
-            padding: 0 var(--size-30);
-            text-align: center;
-        }
-
-        .pricing-subcard h4 {
-            font-size: var(--size-20);
-        }
-
-        .pricing-subcard p {
-            font-size: var(--size-18);
-        }
-
-        .pricing-subcard span {
+        .service-card span {
             font-size: var(--size-14);
         }
 
-        .hire-us {
-            display: flex;
-            flex-direction: column;
-            margin-top: 0;
+    .perspective-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .perspective-text {
+        text-align: center;
+        margin-bottom: var(--size-50);
+    }
+
+        .perspective-text h4 {
+            font-size: var(--size-30);
+            margin-bottom: 0;
         }
 
+    .perspective-image img {
+        width: -webkit-fill-available;
+    }
 
-        .hire-header {
-            text-align: center;
-            margin: 0 var(--size-20);
-        }
-        
+    .why-front {
+        margin-top: var(--size-50);
+        margin-bottom: var(--size-50);
+    }
 
-            .hire-header p {
-                font-size: var(--size-16);
-            }
-
-
-        .hire-human {
-            position: initial;
-            left: 115%;
-            bottom: 40%;
-            gap: var(--size-100);
-            justify-content: center;
+        .why-front h2 {
+            font-size: var(--size-30);
+            margin-bottom: 0;
         }
 
-        .head-of-comm {
-            position: initial;
-            left: 130%;
-            bottom: 35%;
-        }
-
-        .hire-us .form {
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .bottom-form-text p {
-            font-size: var(--size-18);
-        }
-
-        .hire-us h2 {
-            
-            font-size: var(--size-20);
-        }
-
-        .head-of-comm h4 {
-            font-size: var(--size-10);
-        }
-
-        .head-of-comm h5 {
-            font-size: var(--size-10);
-        }
-
-        .input-group {
-            flex-direction: column;
-            height: auto;
-            gap: var(--size-30);
-        }
-
-            .input-group input {
-                height: var(--size-40);
-            }
-
-            .input-group select {
-                height: var(--size-40);
-            }
-
-
-
-
-        .footer-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-left: 0;
-            text-align: center;
-            font-size: var(--size-20);
-        }
-
-
-        .bottom-footer {
-            flex-direction: column;
-            align-items: center;
-        }
-
-
-        #bottom-directory {
-            width: max-content;
-            font-size: var(--size-20);
-        }
-
-
-        .social-buttons {
-            display: grid;
-            grid-template-columns: repeat(4, .1fr);
-            grid-template-rows: repeat(2, .1fr);
-        }
-
-        #face {
-            grid-area: 1 / 1 / 2 / 2;
-        }
-        #goog {
-            grid-area: 1 / 2 / 2 / 3;
-        }
-        #twit {
-            grid-area: 1 / 3 / 2 / 4;
-        }
-        #gith {
-            grid-area: 1 / 4 / 2 / 5;
-        }
-
-        #country {
-            grid-area: 2 / 1 / 3 / 5;
-        }
-
-        .last-text {
+        .why-front p {
             font-size: var(--size-16);
         }
-        
-    } 
 
 
+    #line-dot {
+        display: none;
+    }
+
+    .four-dots {
+        display: inline-flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        transform: translate(130%, 0%);
+    }
+
+    .dot-offers {
+        display: inline-flex;
+        flex-direction: column;
+        gap: 5.525rem;
+        transform: translate(43%, -2%);
+    }
+
+    .full-image img {
+        width: -webkit-fill-available;
+        margin: 0;
+    }
+
+    #full-play {
+        font-size: var(--size-50);
+        transform: translate(271%, -194%);
+    }
+
+    .executive-container {
+        display: grid;
+        grid-template-columns: .5fr 1fr;
+        grid-template-rows: repeat(2, .5fr);
+        grid-column-gap: 0px;
+        grid-row-gap: var(--size-50);
+        margin-right: 0;
+        margin-top: var(--size-50);
+    }
 
 
+    .executive-dots {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .executive-director {
+        grid-area: 1 / 2 / 2 / 3;
+        position: relative;
+        right: 20%;
+    }
+
+    .testimonial {
+        grid-area: 2 / 1 / 3 / 3;
+        text-align: center;
+    }
 
 
+    .executive-dots {
+        left: 35%;
+        position: relative;
+        top: 15%;
+        z-index: -1;
+    }
+
+    .hubspot-logo {
+        width: var(--size-100);
+    }
 
 
+    .testimonial p {
+        font-size: var(--size-20);
+    }
+
+    .trusted h4 {
+        margin-top: var(--size-50);
+        margin-bottom: var(--size-50);
+    }
 
 
+    .logo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--size-50);
+    }
+
+        .logo-container img {
+            width: var(--size-100);
+        }
+
+    .pricing-header {
+        margin-top: var(--size-50);
+    }
+
+    .pricing-container {
+        display: flex;
+        flex-direction: column;
+        gap: var(--size-50);
+        margin: 0 var(--size-20) var(--size-50);
+    }
+
+    .price-card {
+        padding: 0 var(--size-30);
+        text-align: center;
+    }
+
+    .pricing-subcard h4 {
+        font-size: var(--size-20);
+    }
+
+    .pricing-subcard p {
+        font-size: var(--size-18);
+    }
+
+    .pricing-subcard span {
+        font-size: var(--size-14);
+    }
+
+    .hire-us {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
 
 
+    .hire-header {
+        text-align: center;
+        margin: 0 var(--size-20);
+    }
 
 
+        .hire-header p {
+            font-size: var(--size-16);
+        }
 
 
+    .hire-human {
+        position: initial;
+        left: 115%;
+        bottom: 40%;
+        gap: var(--size-100);
+        justify-content: center;
+    }
+
+    .head-of-comm {
+        position: initial;
+        left: 130%;
+        bottom: 35%;
+    }
+
+    .hire-us .form {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bottom-form-text p {
+        font-size: var(--size-18);
+    }
+
+    .hire-us h2 {
+        font-size: var(--size-20);
+    }
+
+    .head-of-comm h4 {
+        font-size: var(--size-10);
+    }
+
+    .head-of-comm h5 {
+        font-size: var(--size-10);
+    }
+
+    .input-group {
+        flex-direction: column;
+        height: auto;
+        gap: var(--size-30);
+    }
+
+        .input-group input {
+            height: var(--size-40);
+        }
+
+        .input-group select {
+            height: var(--size-40);
+        }
 
 
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        text-align: center;
+        font-size: var(--size-20);
+    }
 
 
+    .bottom-footer {
+        flex-direction: column;
+        align-items: center;
+    }
 
 
+    #bottom-directory {
+        width: max-content;
+        font-size: var(--size-20);
+    }
 
 
+    .social-buttons {
+        display: grid;
+        grid-template-columns: repeat(4, .1fr);
+        grid-template-rows: repeat(2, .1fr);
+    }
 
+    #face {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    #goog {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    #twit {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+
+    #gith {
+        grid-area: 1 / 4 / 2 / 5;
+    }
+
+    #country {
+        grid-area: 2 / 1 / 3 / 5;
+    }
+
+    .last-text {
+        font-size: var(--size-16);
+    }
+}
